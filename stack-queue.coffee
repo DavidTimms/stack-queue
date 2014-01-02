@@ -31,7 +31,7 @@ createConstructor = (getMethod) ->
 				fireEvent('empty')
 			removed
 
-		sq.peak = ->
+		sq.peek = ->
 			if getMethod == 'pop'
 				dataList[dataList.length - 1]
 			else

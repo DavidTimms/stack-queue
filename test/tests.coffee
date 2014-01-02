@@ -90,13 +90,13 @@ describe 'Stack Specific Methods', ->
 		assert.equal(stack.pop(), data[1])
 		assert.equal(stack.get(), data[0])
 
-	describe 'stack.peak()', ->
+	describe 'stack.peek()', ->
 		it 'should return last value without mutating the stack', ->
 			data = [34, 48, 19]
 			stack = Stack()(data...)
-			assert.equal(stack.peak(), data[2])
-			assert.equal(stack.peak(), stack())
-			assert.equal(stack.peak(), data[1])
+			assert.equal(stack.peek(), data[2])
+			assert.equal(stack.peek(), stack())
+			assert.equal(stack.peek(), data[1])
 
 describe 'Queue Specific Methods', ->
 	it 'should return values in FIFO order', ->
@@ -107,13 +107,13 @@ describe 'Queue Specific Methods', ->
 		assert.equal(queue.shift(), data[1])
 		assert.equal(queue.get(), data[2])
 
-	describe 'queue.peak()', ->
+	describe 'queue.peek()', ->
 		it 'should return first value without mutating the queue', ->
 			data = [34, 48, 19]
 			queue = Queue()(data...)
-			assert.equal(queue.peak(), data[0])
-			assert.equal(queue.peak(), queue())
-			assert.equal(queue.peak(), data[1])
+			assert.equal(queue.peek(), data[0])
+			assert.equal(queue.peek(), queue())
+			assert.equal(queue.peek(), data[1])
 
 describe 'Events', ->
 	describe 'overflow', ->
