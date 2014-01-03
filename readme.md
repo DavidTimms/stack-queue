@@ -1,9 +1,9 @@
 Stack-Queue
 ================
 
-A JavaScript/CoffeeScript implementation of the basic stack and queue data structures which are safer than using a standard Array, as they only offer the core operations for adding and removing values.
+A JavaScript/CoffeeScript implementation of the basic stack and queue data structures which is safer than using a standard Array, as it only offers the core operations for adding and removing values.
 
-A maximum size can be set for the structure and it will emit an overflow event when this is reached, which can be listening for by a callback function. It also emits an empty event when the last value is removed.
+A maximum size can be set for the structure and it will emit an overflow event when this is reached, which can be listened for by a callback function. It also emits an empty event when the last value is removed.
 
 Usage
 ----------------
